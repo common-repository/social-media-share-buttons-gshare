@@ -1,0 +1,97 @@
+{
+	"name": "wppool/gshare",
+	"category": "common",
+	"attributes": {
+		"className": {
+			"type": "string"
+		},
+		"hasColors": {
+			"type": "boolean",
+			"default": true
+		},
+		"blockTheme": {
+			"type": "string",
+			"default": "theme1"
+		},
+		"modifiedTheme": {
+			"type": "boolean",
+			"default": false
+		},
+		"borderRadius": {
+			"type": "number",
+			"default": 3
+		},
+		"textSize": {
+			"type": "number",
+			"default": 16
+		},
+		"iconSize": {
+			"type": "number",
+			"default": 18
+		},
+		"itemSpacing": {
+			"type": "number",
+			"default": 20
+		},
+		"textAlign": {
+			"type": "string"
+		},
+		"blockBackgroundColor": {
+			"type": "string",
+			"default": "rgba(255, 255, 255, 0)"
+		},
+		"blockBorderColor": {
+			"type": "string",
+			"default": "rgba(255, 255, 255, 0)"
+		},
+		"marginBox": {
+			"type": "array",
+			"default": [{
+				"top": 0,
+				"bottom": 0,
+				"linked": true
+			}]
+		},
+		"borderBox": {
+			"type": "array",
+			"default": [{
+				"top": 0,
+				"right": 0,
+				"bottom": 0,
+				"left": 0,
+				"linked": true
+			}]
+		},
+		"paddingBox": {
+			"type": "array",
+			"default": [{
+				"top": 0,
+				"right": 0,
+				"bottom": 0,
+				"left": 0,
+				"linked": true
+			}]
+		},
+		"customBlockBackgroundColor": {
+			"type": "string"
+		},
+		"textColor": {
+			"type": "string"
+		},
+		"customTextColor": {
+			"type": "string"
+        },
+		"globalSetting": {
+			"type": "boolean",
+			"default": true
+        },
+		"customColor": {
+			"type": "boolean",
+			"default": false
+		},
+		"linkColor": {
+			"type": "string",
+			"default": "#3b5999"
+		}
+	}
+}

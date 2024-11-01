@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/*** Elementor styles ***/
+.elementor-control-type-choose.elementor-control-theme .elementor-choices {
+  flex-wrap: wrap !important;
+  height: auto;
+  line-height: 0;
+  margin: -5px;
+  overflow: visible;
+  width: auto;
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label {
+  flex: 1 1 calc(50% - 10px) !important;
+  max-width: calc(50% - 10px);
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  overflow: visible;
+  border: 2px solid #CDD1E3;
+  border-radius: 3px;
+  font-size: 0;
+  padding: 4px;
+  line-height: 0;
+  margin: 5px;
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i {
+  width: 100%;
+  display: block;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 30px;
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme1 {
+  background-image: url(../../assets/images/layout/theme1.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme2 {
+  background-image: url(../../assets/images/layout/theme2.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme3 {
+  background-image: url(../../assets/images/layout/theme3.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme4 {
+  background-image: url(../../assets/images/layout/theme4.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme5 {
+  background-image: url(../../assets/images/layout/theme5.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme6 {
+  background-image: url(../../assets/images/layout/theme6.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme7 {
+  background-image: url(../../assets/images/layout/theme7.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme8 {
+  background-image: url(../../assets/images/layout/theme8.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme9 {
+  background-image: url(../../assets/images/layout/theme9.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme10 {
+  background-image: url(../../assets/images/layout/theme10.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme11 {
+  background-image: url(../../assets/images/layout/theme11.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme12 {
+  background-image: url(../../assets/images/layout/theme12.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme13 {
+  background-image: url(../../assets/images/layout/theme13.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme14 {
+  background-image: url(../../assets/images/layout/theme14.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme15 {
+  background-image: url(../../assets/images/layout/theme15.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme16 {
+  background-image: url(../../assets/images/layout/theme16.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label i.theme17 {
+  background-image: url(../../assets/images/layout/theme17.png);
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices .elementor-choices-label:after {
+  content: "";
+  font-family: "FontAwesome";
+  position: absolute;
+  color: #fff;
+  top: -8px;
+  right: -8px;
+  height: 24px;
+  width: 24px;
+  background: #8AD900;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 24px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 12px;
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices input:checked + .elementor-choices-label {
+  background-color: transparent;
+  border-color: #8AD900;
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices input:checked + .elementor-choices-label:after {
+  opacity: 1;
+  visibility: visible;
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme2], .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme3], .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme8], .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme11], .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme12], .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme10], .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme9], .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme4], .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme13], .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme14], .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme15], .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme16] {
+  display: none;
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme2] + label, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme3] + label, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme8] + label, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme11] + label, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme12] + label, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme10] + label, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme9] + label, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme4] + label, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme13] + label, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme14] + label, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme15] + label, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme16] + label {
+  pointer-events: none;
+}
+.elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme2] + label:after, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme3] + label:after, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme8] + label:after, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme11] + label:after, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme12] + label:after, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme10] + label:after, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme9] + label:after, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme4] + label:after, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme13] + label:after, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme14] + label:after, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme15] + label:after, .elementor-control-type-choose.elementor-control-theme .elementor-choices input[value=theme16] + label:after {
+  opacity: 1;
+  visibility: visible;
+  content: "Pro";
+  font-family: "Poppins", sans-serif;
+  background-color: #eb3b5a;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  color: white;
+  padding: 0 9px;
+  border-radius: 3px;
+  z-index: 3;
+  height: auto;
+  width: auto;
+  line-height: 16px;
+  font-size: 11px;
+}
+
+/*** Upgrade control ***/
+.gshare-upgrade-control {
+  padding: 10px 15px;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 10px;
+}
+.components-base-control .gshare-upgrade-control {
+  margin-top: -24px;
+}
+.gshare-upgrade-control .gshare-upgrade-title {
+  font-size: 24px;
+  display: block;
+  line-height: 1;
+}
+.gshare-upgrade-control .gshare-upgrade-description {
+  display: block;
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+.gshare-upgrade-control .gshare-upgrade-btn {
+  background-color: #6849FC;
+  border-radius: 21px;
+  line-height: 42px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 0 45px;
+  margin-top: 24px;
+  font-weight: 700;
+}

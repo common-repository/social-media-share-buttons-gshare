@@ -1,0 +1,1181 @@
+@charset "UTF-8";
+.keen-style-selector {
+  font-size: 0;
+  margin-right: -15px;
+}
+.keen-style-selector * {
+  box-sizing: border-box;
+}
+
+.keen-style-item {
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  width: 156px;
+  font-size: 14px;
+  position: relative;
+}
+.keen-style-item.pro-design-disable:before {
+  content: "Pro";
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  color: white;
+  padding: 0 9px;
+  border-radius: 3px;
+  z-index: 3;
+}
+.keen-style-item label {
+  position: relative;
+  display: block;
+}
+.keen-style-item label:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.keen-style-item label .fa-check {
+  position: absolute;
+  color: #fff;
+  top: -12px;
+  right: -10px;
+  height: 30px;
+  width: 30px;
+  background: #8AD900;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.keen-style-item label.checked .hidden {
+  opacity: 1;
+  visibility: visible;
+}
+.keen-style-item input[type=radio] {
+  display: none;
+}
+.keen-style-item input[type=radio]:checked + img {
+  border: 1px solid #8AD900;
+}
+.keen-style-item input[type=radio] + img {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1px solid #CDD1E3;
+  padding: 4px;
+  border-radius: 3px;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.gshare-position-item {
+  display: inline-block;
+  position: relative;
+}
+.gshare-position-item label .fa-check {
+  top: -15px;
+  right: 0;
+}
+.gshare-position-item label.checked .hidden {
+  opacity: 1;
+  visibility: visible;
+}
+.gshare-position-item input[type=radio] {
+  display: none;
+}
+.gshare-position-item input[type=radio]:checked + img {
+  border: 2px solid #8AD900;
+}
+.gshare-position-item input[type=radio] + img {
+  margin-right: 1em;
+  transition: 0.4s;
+  cursor: pointer;
+  border: 2px solid #CDD1E3;
+  border-radius: 3px;
+}
+
+.fa-check {
+  position: absolute;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  background: #8AD900;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 30px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-plus {
+  color: #fff;
+  height: 24px;
+  width: 24px;
+  background: #CDD1E3;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 24px !important;
+  transition: all 0.3s ease-in-out;
+  margin-top: 2px;
+}
+.is-pro-icon + .fa-plus {
+  opacity: 0;
+}
+
+.hidden {
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+[data-image=true] label {
+  display: inline-block;
+  text-align: center;
+}
+
+[data-image=true] label > input {
+  /* HIDE RADIO */
+  visibility: hidden;
+  /* Makes input not-clickable */
+  position: absolute;
+  /* Remove input from document flow */
+}
+
+[data-image=true] label > input + img {
+  /* IMAGE STYLES */
+  cursor: pointer;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+
+label.multiselect-on i {
+  background: #8AD900;
+}
+label.multiselect-on i:before {
+  transition: all 0.3s ease-in-out;
+}
+
+label[data-check=checked] i.fa-plus:before {
+  font-family: FontAwesome !important;
+}
+
+label.multiselect-on i.fa-plus:before {
+  content: "";
+}
+
+.gshare-field .fag {
+  height: 17px;
+  width: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  background-color: #999999;
+  border-radius: 3px;
+  overflow: hidden;
+  fill: white;
+  box-sizing: content-box !important;
+  padding: 10px 0;
+}
+
+.gshare-field-social-wrap {
+  margin: 0 -3px;
+}
+.gshare-field-social-wrap .gshare-field {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.gshare-field .fag[class*=twitter] {
+  background-color: #55acee;
+}
+
+.gshare-field.is-pro-field .fag[class*=twitter] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=facebook] {
+  background-color: #3b5999;
+}
+
+.gshare-field.is-pro-field .fag[class*=facebook] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=pinterest] {
+  background-color: #e60023;
+}
+
+.gshare-field.is-pro-field .fag[class*=pinterest] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=linkedin] {
+  background-color: #0077b5;
+}
+
+.gshare-field.is-pro-field .fag[class*=linkedin] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=tumblr] {
+  background-color: #34465d;
+}
+
+.gshare-field.is-pro-field .fag[class*=tumblr] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=reddit] {
+  background-color: #ff5700;
+}
+
+.gshare-field.is-pro-field .fag[class*=reddit] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=email] {
+  background-color: #2880e5;
+}
+
+.gshare-field.is-pro-field .fag[class*=email] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=google] {
+  background-color: #dd4b39;
+}
+
+.gshare-field.is-pro-field .fag[class*=google] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=yelp] {
+  background-color: #d32323;
+}
+
+.gshare-field.is-pro-field .fag[class*=yelp] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=youtube] {
+  background-color: #f00;
+}
+
+.gshare-field.is-pro-field .fag[class*=youtube] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=instagram] {
+  background-color: #ef0175;
+}
+
+.gshare-field.is-pro-field .fag[class*=instagram] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=houzz] {
+  background-color: #4ebc16;
+}
+
+.gshare-field.is-pro-field .fag[class*=houzz] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=messenger] {
+  background-color: #0084FF;
+}
+
+.gshare-field.is-pro-field .fag[class*=messenger] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=mix] {
+  background-color: #F3782B;
+}
+
+.gshare-field.is-pro-field .fag[class*=mix] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=skype] {
+  background-color: #00AFF0;
+}
+
+.gshare-field.is-pro-field .fag[class*=skype] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=stumbleupon] {
+  background-color: #F74425;
+}
+
+.gshare-field.is-pro-field .fag[class*=stumbleupon] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=telegram] {
+  background-color: #0088CC;
+}
+
+.gshare-field.is-pro-field .fag[class*=telegram] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=viber] {
+  background-color: #665CAC;
+}
+
+.gshare-field.is-pro-field .fag[class*=viber] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=snapchat] {
+  background-color: #FFFC00;
+}
+
+.gshare-field.is-pro-field .fag[class*=snapchat] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=vimeo] {
+  background-color: #1AB7EA;
+}
+
+.gshare-field.is-pro-field .fag[class*=vimeo] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=whatsapp] {
+  background-color: #25D366;
+}
+
+.gshare-field.is-pro-field .fag[class*=whatsapp] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=xing] {
+  background-color: #126567;
+}
+
+.gshare-field.is-pro-field .fag[class*=xing] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=pocket] {
+  background-color: #ef4056;
+}
+
+.gshare-field.is-pro-field .fag[class*=pocket] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=amazon] {
+  background-color: #222222;
+}
+
+.gshare-field.is-pro-field .fag[class*=amazon] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=calendar] {
+  background-color: #1a73e8;
+}
+
+.gshare-field.is-pro-field .fag[class*=calendar] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=hacker-news] {
+  background-color: #f08641;
+}
+
+.gshare-field.is-pro-field .fag[class*=hacker-news] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=vine] {
+  background-color: #0d642e;
+}
+
+.gshare-field.is-pro-field .fag[class*=vine] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=aol] {
+  background-color: #222222;
+}
+
+.gshare-field.is-pro-field .fag[class*=aol] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=gmail] {
+  background-color: #dd4b39;
+}
+
+.gshare-field.is-pro-field .fag[class*=gmail] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=print] {
+  background-color: #75aa33;
+}
+
+.gshare-field.is-pro-field .fag[class*=print] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=yahoo] {
+  background-color: #511295;
+}
+
+.gshare-field.is-pro-field .fag[class*=yahoo] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=journal] {
+  background-color: #336697;
+}
+
+.gshare-field.is-pro-field .fag[class*=journal] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=vkon] {
+  background-color: #4c75a3;
+}
+
+.gshare-field.is-pro-field .fag[class*=vkon] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=buffer] {
+  background-color: #222222;
+}
+
+.gshare-field.is-pro-field .fag[class*=buffer] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=myspace] {
+  background-color: #3a5998;
+}
+
+.gshare-field.is-pro-field .fag[class*=myspace] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=renren] {
+  background-color: #005eac;
+}
+
+.gshare-field.is-pro-field .fag[class*=renren] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=weibo] {
+  background-color: #E6162D;
+}
+
+.gshare-field.is-pro-field .fag[class*=weibo] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=evernote] {
+  background-color: #7cbf4b;
+}
+
+.gshare-field.is-pro-field .fag[class*=evernote] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=instapaper] {
+  background-color: #222222;
+}
+
+.gshare-field.is-pro-field .fag[class*=instapaper] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=plurk] {
+  background-color: #cf682f;
+}
+
+.gshare-field.is-pro-field .fag[class*=plurk] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=aim] {
+  background-color: #10ff00;
+}
+
+.gshare-field.is-pro-field .fag[class*=aim] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=pinboard] {
+  background-color: #1341de;
+}
+
+.gshare-field.is-pro-field .fag[class*=pinboard] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=blogger] {
+  background-color: #fda352;
+}
+
+.gshare-field.is-pro-field .fag[class*=blogger] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=trello] {
+  background-color: #1189ce;
+}
+
+.gshare-field.is-pro-field .fag[class*=trello] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=wordpress] {
+  background-color: #464646;
+}
+
+.gshare-field.is-pro-field .fag[class*=wordpress] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=digg] {
+  background-color: #006094;
+}
+
+.gshare-field.is-pro-field .fag[class*=digg] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=delicious] {
+  background-color: #3398fc;
+}
+
+.gshare-field.is-pro-field .fag[class*=delicious] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=sms] {
+  background-color: #6ebe45;
+}
+
+.gshare-field.is-pro-field .fag[class*=sms] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=viadeo] {
+  background-color: #2a2a2a;
+}
+
+.gshare-field.is-pro-field .fag[class*=viadeo] {
+  background-color: gray;
+}
+
+.gshare-field .fag[class*=diigo] {
+  background-color: #4a8bca;
+}
+
+.gshare-field.is-pro-field .fag[class*=diigo] {
+  background-color: gray;
+}
+
+.gshare-field {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+.gshare-field .gshare-checkbox > label {
+  min-width: 38px;
+}
+
+.gshare-position-selector {
+  margin-bottom: 20px;
+}
+
+[data-image=true] span {
+  display: block;
+  text-align: center;
+}
+
+[data-image=true] {
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+[data-image=true] img {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+[data-image=true] {
+  width: 42px;
+  display: inline-block;
+}
+[data-image=true].gshare-checkbox-big {
+  width: 236px;
+}
+[data-image=true].display-checkbox {
+  width: 50px;
+}
+
+.check-input-icon {
+  line-height: 46px;
+  border-radius: 3px;
+  width: 46px;
+  text-align: center;
+  background-color: #CDD1E3;
+  display: inline-block;
+  height: 46px;
+  color: white;
+}
+.multiselect-on .check-input-icon {
+  background-color: #8AD900;
+}
+
+.check-input-title {
+  margin-top: 3px;
+  display: block;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.gshare-option-box .form-table * {
+  box-sizing: border-box;
+}
+.gshare-option-box .form-table th,
+.gshare-option-box .form-table td {
+  padding: 0;
+}
+.gshare-option-box .form-table th {
+  font-size: 18px;
+  line-height: 1;
+}
+.gshare-option-box .form-table th label {
+  display: block;
+  padding-right: 15px;
+}
+.gshare-option-box .form-table th .description {
+  font-size: 13px;
+  display: block;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 5px;
+  color: #666666;
+  line-height: 1.55;
+}
+.gshare-option-box .form-table tbody > tr th + td {
+  padding-bottom: 80px;
+}
+.gshare-option-box .form-table tbody > tr.keen-radio th + td {
+  padding-bottom: 60px;
+}
+.gshare-option-box .form-table tbody > tr:last-child th + td {
+  padding-bottom: 0;
+}
+
+.gshare-extra-feature-item {
+  position: relative;
+}
+.gshare-extra-feature-item:before {
+  content: "Pro";
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background-color: #6849FC;
+  color: white;
+  padding: 0 9px;
+  border-radius: 3px;
+  z-index: 3;
+}
+.gshare-extra-feature-item input[type=checkbox] + img {
+  margin-right: 1em;
+  transition: 0.4s;
+  cursor: pointer;
+  border: 2px solid #CDD1E3;
+  border-radius: 3px;
+}
+
+.is-pro-field {
+  position: relative;
+}
+.is-pro-field .gshare-checkbox {
+  filter: blur(1px);
+}
+.is-pro-field:before {
+  content: "Pro";
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 36px;
+  right: 3px;
+  left: 3px;
+  color: white;
+  padding: 2px 9px;
+  border-radius: 0 0 3px 3px;
+  z-index: 3;
+  text-align: center;
+  font-size: 12px;
+}
+
+.is-pro-field:before,
+.gshare-extra-feature-item:before,
+.pro-design-disable:before {
+  background-color: #eb3b5a;
+}
+
+.keen-color-selector {
+  display: inline-block;
+  position: relative;
+}
+.keen-color-selector .wp-color-result,
+.keen-color-selector .wp-picker-container .wp-color-result.button {
+  min-height: 30px;
+}
+.keen-color-selector .pro-design-disable {
+  position: relative;
+  width: 150px;
+  display: inline-block;
+  border: 1px solid #0071a1;
+  height: 32px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.keen-color-selector .pro-design-disable:after {
+  content: "";
+  width: 30px;
+  height: 100%;
+  background-color: #dd3333;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.keen-color-selector .pro-design-disable:before {
+  content: "Pro";
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 6px;
+  right: 11px;
+  color: white;
+  padding: 0 9px;
+  border-radius: 3px;
+  z-index: 3;
+  text-align: center;
+}
+.keen-color-selector .wp-color-result-text {
+  padding: 0 48px 0 6px;
+}
+.keen-color-selector .wp-color-result:after {
+  line-height: 28px;
+  padding: 0 48px 0 6px;
+}
+
+.keen-font-selector {
+  display: inline-block;
+  position: relative;
+}
+.keen-font-selector .pro-design-disable {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #0071a1;
+  padding: 6px 15px 6px 15px;
+  min-width: 200px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.keen-font-selector .pro-design-disable:before {
+  content: "Pro";
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 6px;
+  right: 11px;
+  color: white;
+  padding: 0 9px;
+  border-radius: 3px;
+  z-index: 3;
+  text-align: center;
+}
+
+.gshare-font-picker {
+  background: #fff url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E") no-repeat right 5px top 55%;
+  border: 2px solid #CDD1E3;
+  border-radius: 3px;
+  padding: 6px 15px;
+}
+.gshare-font-picker:focus {
+  outline: none;
+  border-color: #8AD900;
+}
+.gshare-font-picker::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.image-radio-style-disable {
+  display: block;
+}
+.image-radio-style-disable:focus {
+  outline: none;
+}
+.image-radio-style-disable img {
+  filter: blur(1px);
+}
+
+.toplevel_page_gshare #wpcontent {
+  padding: 70px 30px;
+  background: #EFF2F8;
+}
+.toplevel_page_gshare #wpcontent .title {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.toplevel_page_gshare #wpcontent .title img {
+  margin-right: 20px;
+}
+.toplevel_page_gshare .submit {
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
+.toplevel_page_gshare .submit [type=submit] {
+  padding: 19px 35px;
+  background-image: linear-gradient(45deg, #6849fc 0%, #9580ff 100%);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 4px;
+  line-height: 18px;
+  transition: all 0.3s ease-out;
+  border: none;
+  color: white;
+}
+.toplevel_page_gshare .gshare-save-result p {
+  font-size: 16px;
+  background-color: #333333;
+  border-radius: 4px;
+  color: white;
+  padding: 9px 22px;
+  margin-bottom: 0;
+}
+.toplevel_page_gshare .gshare-save-result p.gshare-save-success {
+  background-color: #8AD900;
+}
+.toplevel_page_gshare .gshare-save-result p.gshare-save-error {
+  background-color: #E6162D;
+}
+.toplevel_page_gshare .gshare-save-result p.gshare-save-processing {
+  background-color: #fda352;
+}
+
+.gshare-option-form * {
+  box-sizing: border-box;
+}
+.gshare-option-form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ghsare-premium-cta {
+  background: #23282d;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  padding: 50px 35px;
+  position: sticky;
+  top: 55px;
+  color: white;
+}
+.ghsare-premium-cta .premium-cta-title {
+  margin-top: -10px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.25;
+}
+.ghsare-premium-cta .premium-cta-featurs {
+  margin: 0;
+  list-style: none;
+}
+.ghsare-premium-cta .premium-cta-featurs li {
+  position: relative;
+  line-height: 25px;
+  font-size: 14px;
+  padding: 0 0 0 20px;
+}
+.ghsare-premium-cta .premium-cta-featurs li:before {
+  content: "";
+  font-family: FontAwesome !important;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  line-height: 27px;
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.btn-premium {
+  display: inline-block;
+  line-height: 56px;
+  padding: 0 35px;
+  text-align: center;
+  background-color: #6849FC;
+  background-image: linear-gradient(45deg, #6849fc 0%, #9580ff 100%);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-premium:focus {
+  outline: none;
+  color: white;
+}
+.btn-premium:hover {
+  filter: saturate(1.5) brightness(1.2);
+  color: white;
+}
+
+.wp-not-current-submenu.wp-menu-separator {
+  display: none;
+}
+
+a.toplevel_page_gshare {
+  background: linear-gradient(45deg, #6849fc 0%, #9580ff 100%);
+  transition: all 0.3s ease-in-out;
+}
+#adminmenu li.current a.toplevel_page_gshare {
+  background: linear-gradient(45deg, #6849fc 0%, #9580ff 100%);
+}
+#adminmenu a.toplevel_page_gshare:hover {
+  color: white;
+}
+
+/*** Setting Tabs ***/
+.gshare-option-form {
+  font-family: "Poppins", sans-serif;
+}
+
+.gshare-tab-link {
+  padding: 19px 35px;
+  background-image: linear-gradient(45deg, #ddd, #ddd);
+  color: #303772;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 4px 4px 0 0;
+  line-height: 18px;
+  transition: all 0.3s ease-out;
+}
+.gshare-tab-link:focus, .gshare-tab-link:hover {
+  color: #303772;
+  outline: none;
+  box-shadow: none;
+}
+.gshare-tab-link:hover {
+  filter: saturate(1.5) brightness(1.2);
+}
+.gshare-tab-link + .submit {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.gshare-tab-link + .submit [type=submit] {
+  line-height: 18px;
+  padding: 14px 22px;
+  background-image: linear-gradient(45deg, #6849fc 0%, #9580ff 100%);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #6849fc;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  margin: 0;
+  transition: all 0.3s ease-out;
+}
+.gshare-tab-link + .submit [type=submit]:hover {
+  filter: saturate(1.5) brightness(1.2);
+}
+.gshare-tab-link.get_pro {
+  background-color: #fbb034;
+  background-image: linear-gradient(45deg, #fbb034 0%, #ffdd00 74%);
+}
+.gshare-tab-link.active {
+  background-image: linear-gradient(45deg, #6849fc 0%, #9580ff 100%);
+  color: #ffffff;
+}
+
+.gshare-setting-tab {
+  display: none;
+  background-color: white;
+  padding: 35px;
+}
+.gshare-setting-tab.active {
+  display: block;
+}
+
+.gshare-setting-linkboxes {
+  margin: 0 -15px -30px;
+}
+.gshare-setting-linkboxes:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gshare-setting-linkbox {
+  width: 50%;
+  padding: 0 15px;
+  float: left;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.gshare-setting-linkbox:nth-child(2n+1) {
+  clear: left;
+}
+
+.gshare-setting-linkbox-inner {
+  box-shadow: 0px 8px 38px 0px rgba(16, 16, 16, 0.07);
+  padding: 48px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.gshare-setting-linkbox-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gshare-setting-linkbox-icon {
+  color: #6849fc;
+  font-size: 86px;
+  float: left;
+  width: 86px;
+  text-align: center;
+  margin-right: 32px;
+}
+
+.gshare-setting-linkbox-content {
+  float: left;
+  width: calc(100% - 118px);
+}
+
+.gshare-setting-linkbox-title {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #303772;
+}
+
+.gshare-setting-linkbox-text {
+  line-height: 1.75;
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+}
+
+.gshare-setting-linkbox-btn {
+  display: inline-block;
+  background-image: linear-gradient(45deg, #6849fc 0%, #9580ff 100%);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  margin-top: 25px;
+}
+.gshare-setting-linkbox-btn:focus {
+  color: white;
+}
+.gshare-setting-linkbox-btn:hover {
+  filter: saturate(1.5) brightness(1.2);
+  color: white;
+}
+
+.gshare-setting-linkbox.colorful-linkbox .gshare-setting-linkbox-inner {
+  background-image: linear-gradient(45deg, #6849fc 0%, #9580ff 100%);
+}
+.gshare-setting-linkbox.colorful-linkbox .gshare-setting-linkbox-title,
+.gshare-setting-linkbox.colorful-linkbox .gshare-setting-linkbox-icon {
+  color: white;
+}
+.gshare-setting-linkbox.colorful-linkbox .gshare-setting-linkbox-text {
+  color: #f1f1f1;
+}
+.gshare-setting-linkbox.colorful-linkbox .gshare-setting-linkbox-btn {
+  background-color: #fbb034;
+  background-image: linear-gradient(45deg, #fbb034 0%, #ffdd00 74%);
+  color: #111111;
+}
+
+#gshareProTab {
+  padding: 80px 0;
+}
+#gshareProTab h3 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #303772;
+  text-align: center;
+}
+
+.gshare-profeature-shot {
+  margin: -15px auto;
+  font-size: 0;
+  max-width: 900px;
+  padding: 30px 0;
+}
+.gshare-profeature-shot > div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.gshare-profeature-shot h4 {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #303772;
+}
+.gshare-profeature-shot p {
+  line-height: 1.75;
+  font-size: 15px;
+  color: #666666;
+  margin: 0;
+}
+.gshare-profeature-shot img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gshare-pro-footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .gshare-setting-linkbox {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=admin.css.map */
